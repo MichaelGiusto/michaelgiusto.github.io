@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- 
+Name: Michael Giusto
+File: bookshelf.html
+Date: 7/12/2026
+-->
+<html lang="en">
+    <head>
+        <title>Bookshelf | Michael Giuto's Portfolio</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initialscale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="scripts/scripts.js"></script>
+        <meta name="author" content="Michael Giusto">
+        <meta name="description" content="A list of my favorite books and a form to send me your recommendations.">
+    </head>
+    <body>
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="menu-links">
+                <a href="home.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="bookshelf.html">Bookshelf</a>
+                <a href="contact.html">Contact Info</a>
+            </div>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+        </nav>
+
+        <header>
+            <div>
+                <div class="headertextbox">
+                    <h1>Michael Giusto</h1>
+                    <h3>Personal Portfolio Website</h3>
+                </div>
+                <figure>
+                    <img src="images/michael.jpg" alt="Selfie photo of Michael Giusto."/>
+                    <figcaption>Passion for Improvement</figcaption>
+                </figure>
+            </div>
+        </header>
+
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="bookshelf.html">Bookshelf</a></li>
+                <li><a href="contact.html">Contact Info</a></li>
+            </ul>
+        </nav>
+
+        <!-- Use the main area to add the main content to the webpage -->
+        <main>
+            <div id="bookshelf">
+                <figure>
+                    <img src="images/books/hwfwm.jpg" alt="Book Cover for He Who Fights With Monsters."/>
+                    <figcaption>
+                        <a href="https://www.goodreads.com/book/show/57189884-he-who-fights-with-monsters" target="_blank">
+                            He Who Fights With Monsters
+                        </a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/books/agot.jpg" alt="Book Cover for a Song of Ice and Fire."/>
+                    <figcaption>
+                        <a href="https://www.goodreads.com/book/show/13496.A_Game_of_Thrones" target="_blank">
+                            A Song of Ice and Fire
+                        </a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/books/pjo.jpg" alt="Book Cover for Percy Jackson and the Olympians."/>
+                    <figcaption>
+                        <a href="https://www.goodreads.com/book/show/123675190-the-lightning-thief" target="_blank">
+                            Percy Jackson and the Olympains
+                        </a>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div>
+                <h2>Submit a Book Recommendation!</h2>
+                <form>
+                    <label for="sName">Submitter Name:</label><br>
+                    <input type="text" id="sName" name="sName"><br>
+
+                    <label for="bTitle">Book Title:</label><br>
+                    <input type="text" id="bTitle" name="bTitle"><br>
+
+                    <label for="bAuthor">Book Author:</label><br>
+                    <input type="text" id="bAuthor" name="bAuthor"><br>
+
+                    <p>Book Score:</p>
+                    <input type="radio" id="rate1" name="bookScore" value="1">
+                    <label for="rate1">1</label>
+                    <input type="radio" id="rate2" name="bookScore" value="2">
+                    <label for="rate2">2</label>
+                    <input type="radio" id="rate3" name="bookScore" value="3">
+                    <label for="rate3">3</label>
+                    <input type="radio" id="rate4" name="bookScore" value="4">
+                    <label for="rate4">4</label>
+                    <input type="radio" id="rate5" name="bookScore" value="5">
+                    <label for="rate5">5</label>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; Copyright 2026. All Rights Reserved.</p>
+            <p>Email: <a href="mailto:mgiusto2826@student.gwinnetttech.edu">mgiusto2826@student.gwinnetttech.edu</a></p>
+            <div>
+                <p>Socials:</p>
+                <a href="https://www.linkedin.com/">
+                    <img class="socials-logo" src="images/linkedin-logo.png" alt="Linkedin Brand Logo">
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>

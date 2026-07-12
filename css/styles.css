@@ -1,0 +1,354 @@
+/*
+Name: Michael Giusto
+File: styles.css
+Date: 7/12/2026
+*/
+
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul, ol, p, article, figure, figcaption, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for fonts */
+* {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+/* Style rules for mobile viewport */ 
+/* Style rule for responsive images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for navigation area */
+.desktop-nav {
+    display: none;
+}
+
+/* Style rules for mobile hamburger */
+#menu-links {
+    display: none;
+    background-color: #788BFF;
+}
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.menu-icon div {
+    height: 50px;
+    width: 50px;
+    background-color: #373684;
+}
+
+/* Style rules for header content */
+header {
+    font-size: 1em;
+    background-color: #5465FF;
+    color: #fff;
+}
+header div figure img {
+    max-width: 50%;
+    margin: auto;
+}
+header div figure figcaption {
+    text-align: center;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    background-color: #eeeeee;
+    font-family: Verdana, Arial, sans-serif;
+}
+main div {
+    padding: 2%;
+    background-color: #fff;
+}
+main article {
+    padding: 2%;
+    background-color: #fff;
+}
+table {
+    margin: 2%;
+    width: 96%;
+    border-collapse: collapse;
+}
+table caption {
+    font-size: 1.5em;
+}
+table tr th {
+    font-weight: bold;
+    text-align: left;
+    border-width: 2px;
+    border-color: #000;
+    border-style: solid;
+}
+table tr td {
+    border-width: 1px;
+    border-color: #000;
+    border-style: solid;
+}
+form label {
+    color: grey;
+}
+form p {
+    color: grey;
+}
+form input[type="text"] {
+    width: 96%;
+    padding: 2%;
+    margin-bottom: 4%;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: grey;
+    border-style: solid;
+}
+form input[type="radio"] {
+    margin-left: 4%;
+}
+form input[type="submit"] {
+    width: 50%;
+    padding: 4%;
+    margin-top: 4%;
+    border-radius: 10px;
+    color: white;
+    background-color: lightgray;
+}
+form input[type="submit"]:hover {
+    background-color: gray;
+}
+iframe {
+    width: 100%;
+}
+
+/* Style rules for footer content */
+footer {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    font-size: 1em;
+    color: #fff;
+    background-color: #788BFF;
+}
+footer p {
+    margin: 2%;
+}
+footer a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+footer div p {
+    margin: 0;
+}
+.socials-logo {
+    width: 2em;
+}
+
+/* Style rules for class selectors */
+.headertextbox {
+    display: block;
+    text-align: center;
+}
+.headertextbox h1 {
+    font-style: italic;
+    padding: 2%;
+}
+.headertextbox h3 {
+    padding: 2%;
+}
+.projectlink {
+    background-color: #BFD7FF;
+    border-radius: 10px;
+    margin: 2%;
+    padding: 2%;
+}
+.projectlink a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Style rules for id selectors */
+#projectslist {
+    list-style-type: none;
+}
+#projectstitle {
+    color: #fff;
+    background-color: #9BB1FF;
+    border-radius: 10px;
+    padding: 1%;
+}
+#bookshelf figure {
+    padding: 2%;
+    margin: 2%;
+}
+#bookshelf figure img {
+    aspect-ratio: 2/3;
+    width: 100%;
+    box-shadow: 8px 4px 4px black;
+}
+#bookshelf figure figcaption {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 2%;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px) {
+    /* Style rules for header content */
+    header {
+        font-size: 2em;
+        background-color: #5465FF;
+        color: #fff;
+    }
+    header div {
+        display: flex;
+    }
+    header div img {
+        max-width: 100%;
+        margin: 0;
+    }
+    .headertextbox {
+        margin: auto;
+    }
+
+    /* Style rules for navigation area */
+    .mobile-nav {
+        display: none;
+    }
+    .desktop-nav {
+        display: block;
+    }
+    .desktop-nav {
+        background-color: #788BFF;
+    }
+    .desktop-nav ul {
+        list-style-type: none;
+        margin: 0;
+        text-align: center;
+    }
+    .desktop-nav li {
+        display: inline-block;
+        font-size: 2em;
+    }
+    .desktop-nav li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 0.5em 1em;
+        text-decoration: none;
+    }
+
+    /* Style rules for main content */
+    table {
+        width: 70%;
+    }
+    form input[type="text"] {
+        padding: 1%;
+        width: 60%;
+    }
+    form input[type="radio"] {
+        margin-left: 2%;
+    }
+    iframe {
+        width: 100%;
+        aspect-ratio: calc(2);
+    }
+
+    /* Style rules for footer content */
+    footer {
+        font-size: 1.5em;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px) {
+    /* Style rules for header content */
+    header {
+        font-size: 2em;
+    }
+    header div img {
+        max-width: 15%;
+        margin: 0;
+    }
+
+    /* Style rules for navigation area */
+    .desktop-nav li {
+        font-size: 1.5em;
+    }
+    .desktop-nav li a:hover {
+        transform: scale(1.2);
+    }
+
+    /* Style rules for main content */
+    table {
+        width: 50%;
+    }
+    form input[type="text"] {
+        width: 40%;
+        margin-bottom: 1%;
+    }
+    form input[type="radio"] {
+        margin-left: 2%;
+    }
+    form input[type="submit"] {
+        margin-top: 1%;
+        padding: 2%;
+        width: 20%;
+    }
+    iframe {
+        width: 50%;
+    }
+
+    /* Style rules for class selectors */
+    .projectlink {
+        background-color: #BFD7FF;
+        border-radius: 10px;
+        margin: 0.5%;
+        padding: 0.5%;
+    }
+
+    /* Style rules for id selectors */
+    #bookshelf {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* Style rules for footer content */
+    footer {
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        text-align: center;
+        font-size: 1em;
+        color: #fff;
+        background-color: #788BFF;
+    }
+    footer p {
+        margin: 1%;
+    }
+}
